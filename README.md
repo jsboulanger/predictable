@@ -34,20 +34,13 @@ Include the Predictable::Item in the models of the items you want to recommend.
       ...
     end
 
-Add your existing users and items to prediction.io
+Get 10 recommended items for a user.
 
-    rake predictable:add
+    Offer.recommended_for(user, 10)
 
-Get recommended items for a user.
+ Get 10 items most similar to an existing item.
 
-    Offer.recommend(10)
-
-    user.offers.recommend(10)
-
- Get items similar to an existing item.
-
-Offer.recommend_n(10)
-offer.similar_n(4)
+    Offer.similar_to(offer, 10)
 
 
 ## Contributing
