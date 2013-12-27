@@ -7,7 +7,7 @@ module Predictable
   class << self
     def default_config
       {
-        :api_url     => "http://localhost:10001",
+        :api_url     => "http://localhost:8000",
         :threads     => 10,
         :api_version => ""
       }.dup
